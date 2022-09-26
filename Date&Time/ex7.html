@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <script>
+
+            function dateTime(){
+
+            var j=new Date()
+
+        
+        
+            var months=["January","February","March","April","May","June","July","August","September","October","November","December" ]
+
+           
+            datedetails=`${j.getDate()} - ${ months[j.getMonth()+1].slice(0,3) } - ${j.getFullYear()}`
+
+            document.getElementById('jj24').innerText=` ${datedetails} - [ ${j.getHours()} : ${j.getMinutes()} : ${j.getSeconds()} ] `
+
+            document.getElementById('jj12').innerText=` ${datedetails} - [ ${ j.toLocaleTimeString() }] `
+
+            }
+
+            
+            setInterval('dateTime()',1000)
+
+
+
+        </script>
+    </head>
+
+    <body>
+        <h1>DATE and TIME in JAVASCRIPT[24hrs]</h1>
+        <time id="jj24"></time>
+
+        <h1>DATE and TIME in JAVASCRIPT[12hrs]</h1>
+        <time id="jj12"></time>
+
+    </body>
+</html>

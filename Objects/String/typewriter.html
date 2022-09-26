@@ -1,0 +1,28 @@
+<html>
+ <body>
+    <H1>TYPE WRITER
+        
+    </H1>
+    <button onclick="typewriter()">CLICK ME</button>
+
+     <p id="demo"></p>
+     
+    <script>
+        var i=0;
+        var txt= `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus ullam, distinctio nemo saepe nesciunt labore officia ex? Odio ex provident sit fugiat temporibus molestiae unde quod, at repudiandae beatae debitis.  `
+
+        
+
+        function typewriter()
+        {
+            if (i<txt.length)
+        {
+            document.getElementById("demo").innerHTML+=txt.charAt(i);
+            i++;
+            window.setTimeout(typewriter,9);
+        }
+        }
+    </script> 
+    </body>
+</html>
+

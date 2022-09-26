@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"/>
+    <script>
+        function myfun()
+        {
+            //target input with ID reference
+            var inputt=document.getElementById('uname')
+
+            //target span tag with id red
+            var span=document.getElementById('uname_response')
+
+
+
+            
+
+            //
+            span.innerHTML=`${ inputt.value.length }`
+
+
+        }
+    </script>
+</head>
+<body>
+    <div class="container p-5 w-50">
+
+        <div class="mb-3">
+            <label class="form-label">NAME</label> <br>
+            <input type="text" maxlength="36" class="form-label" id="uname"  onkeyup="myfun()"/> <br>
+            <small><span id="uname_response">0</span>/36</small>
+        
+          </div>
+          <div class="mb-3">
+            <button type="button" class="btn btn-primary">Responce</button>
+          </div>
+
+
+
+    </div>
+    
+</body>
+</html>

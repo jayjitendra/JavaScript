@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <style>
+        textarea{
+            height: 300px;
+            resize: none;
+        }
+    </style>
+    
+    <script>
+        function myfun()
+        {
+            //target input_by id reference.....
+           var input_dom=document.getElementById('uname')
+
+             //target span_by id reference.....
+             var span_dom=document.getElementById('uname_span')
+
+             //total no of characters of textof textbox..
+             var no_of_char=input_dom.value.length
+
+             var max_char_input=250
+
+             //target meter_by id reference.....
+             var meter_dom=document.getElementById('uname_meter')
+
+            
+            span_dom.innerHTML=max_char_input-no_of_char //250-input.value.length
+
+             meter_dom.value=max_char_input-no_of_char 
+        }
+    </script>
+   
+</head>
+<body>
+    <div class="container p-5 w-50">
+
+        <div class="mb-3">
+            <label class="form-label"> NAME [Enter Max 250 charaxcters]</label> <br>
+            <textarea type="text"  maxlength="250" class="form-control" id="uname" onkeyup="myfun()"></textarea> <br>
+            <div  class="d-block" >
+            Left Characters:<span id="uname_span">250</span>
+            </div>
+            <meter class="d-block w-100" id="uname_meter" max="250" min="0" value="250"></meter>
+          </div>
+          <div class="mb-3">
+            <button type="button" class="btn btn-primary">SEE MORE</button>
+          </div>
+
+    </div>
+    
+</body>
+</html>

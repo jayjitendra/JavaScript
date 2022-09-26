@@ -1,0 +1,37 @@
+<html>
+ <body>
+
+    <button onclick="myfunction()">Try It</button>
+
+     <p id="demo"></p>
+     
+    <script>
+        var fruits = ["Orange","Mango","Apple","Banana"];
+        document.getElementById("demo").innerHTML = fruits;
+
+        function myfunction()
+        {
+            fruits.push("Kiwi","Grapes");
+            document.getElementById("demo").innerHTML=fruits;
+        }
+    </script>
+
+    <br><br><br>
+
+    <script>
+         var no=[]
+
+         for(var i=1;i<=10;i++)
+         {
+            no.push(i) 
+         }
+         document.write( no )
+
+
+    </script>
+
+
+
+ </body>
+
+</html>

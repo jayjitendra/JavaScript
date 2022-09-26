@@ -1,0 +1,34 @@
+<!--functions with multiples arguments-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myfun(tn,maxrange,minrange)
+        {
+            for(i=minrange;i<=maxrange;i++)
+            {
+                document.write(` ${tn} x ${i} = ${tn*i} <br/>`)
+            }
+        }
+    </script>
+</head>
+<body>
+    <script>
+        myfun(6,10,1)
+    </script>
+
+    <br>
+    <script>
+        myfun(10,20,10)
+    </script>
+    <br>
+    <script>
+        myfun(12,10,6)
+    </script>
+</body>
+</html>

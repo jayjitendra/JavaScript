@@ -1,0 +1,44 @@
+<!--<script>
+
+    var user={
+                fname:'jay',
+
+                lname:'jitendra',
+
+                fullname:function()
+
+                    {
+                        return "This is user_object_function_type_property"
+                    }
+            }
+
+    document.write(`${user.fname} - ${user.lname} - ${user.fullname()} <br/>`)
+
+</script> -->
+
+
+<script>
+
+    var user={
+                fname:'jay',
+
+                lname:'jitendra',
+
+                fullname:function()
+
+                    {
+                        // here instead of calling global object (user) we can call :this" keyword
+                        return `${this.fname} - ${this.lname}` 
+                    }
+            }
+
+    document.write(` ${user.fullname()} <br/>`)
+
+    // here we learn that we caN ALSO USE THAT "THIS" keyword in object aLSO
+    
+
+    
+
+
+
+</script>

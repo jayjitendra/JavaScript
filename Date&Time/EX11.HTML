@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <style>
+        textarea{
+            height: 300px;
+            resize: none;
+        }
+    </style>
+    <script src="EX11.JS"></script>
+</head>
+<body>
+    <div class="container py-1">
+
+        <div class="row">
+            
+            <div class="col-lg-6">
+               <div class="mb-2">
+                <label class="form-label"> Enter Message</label> <br> 
+                
+               </div>
+                
+            <textarea type="text" onkeyup="myfun(this.value)"  maxlength="250" class="form-control" id="source-code"></textarea> <br>
+            Left Characters:<output id="code_result">250</output>
+
+            </div>
+
+
+            <div class="col-lg-6">
+                <h4 class="px-4">Birthday Wishes</h4>
+                <div class="bwishes">
+
+                    <ul class="list-group">
+                        <script>
+                            //var res=""
+                           // for( var bw of BithdayWishes)
+                          //  {
+                          //      res+=`<li class="list-group-items" onclick="myfun(this.innerText)">
+                          //               ${bw.title}
+                            //          </li>`
+ 
+                          //  }
+
+                            for( var i=0;i<BithdayWishes.length;i++)
+                            {
+                                res+=`<li class="list-group-items" onclick="myfun(this.innerText)">
+                                         ${BithdayWishes.title}
+                                      </li>`
+ 
+                            }
+                            document.getElementsByClassName(`list-group`)[0].innerHTML=res
+
+
+                        </script>
+                    </ul>
+
+                </div>
+                
+
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

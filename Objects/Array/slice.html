@@ -1,0 +1,19 @@
+<html>
+ <body>
+
+    <button onclick="myfunction()">Try It</button>
+
+     <p id="demo"></p>
+     
+    <script>
+        var fruits = ["Orange","Mango","Apple","Banana"];
+        document.getElementById("demo").innerHTML = fruits;
+
+        function myfunction()
+        {
+            fruits.splice(0,3,"wanda","vision");
+            document.getElementById("demo").innerHTML=fruits;
+        }
+    </script>
+ </body>
+</html> 

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <script>
+        function myfun()
+        {
+            //target input_by id reference.....
+           var input_dom=document.getElementById('uname')
+
+             //target span_by id reference.....
+             var span_dom=document.getElementById('uname_span')
+
+           //get the value of input
+           alert(input_dom.value)
+
+           //target span_dom.innerText=js response....
+           //here we use innerhtml for using underline for te given input text
+           span_dom.innerHTML=`<u> ${ input_dom.value}</u>`
+        }
+    </script>
+</head>
+<body>
+    <div class="container p-5 w-50">
+
+        <div class="mb-3">
+            <label class="form-label"> NAME</label>
+            <input type="text" class="form-control" id="uname" />
+            <span id="uname_span"></span>
+          </div>
+          <div class="mb-3">
+            <button type="button" class="btn btn-primary" onclick="myfun()">SEE MORE</button>
+          </div>
+
+    </div>
+    
+</body>
+</html>

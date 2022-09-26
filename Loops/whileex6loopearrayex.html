@@ -1,0 +1,45 @@
+<h1>Total No of Months In Array</h1>
+<script>
+    var Months= ["January","February","March","April","May","June","July",
+            "August","September","October","November","December"]
+    document.write(Months)        
+</script>
+
+<h1>Total No of Values In Array</h1>
+<script>
+    var Months= ["January","February","March","April","May","June","July",
+            "August","September","October","November","December"]
+    document.write(`Total Values of Array is : ${Months.length} `)        
+</script>
+
+
+
+<h1>Total No of Characters In Array
+</h1>
+<script>
+    var username="jayjitendra"
+    document.write(`Total Values of Char'S : ${username.length} `)        
+</script>
+
+<h1>Access Array data using Index</h1>
+<script>
+    var emp=[1,"jay","jayjitendra313@gmail.com",8801164327,"hyd"]
+    document.write(`
+        <h2>${emp[1]}</h2> 
+        <h3>${emp[2]}</h3>`
+        )        
+
+    document.write(`First index:${emp[0]}  </br>`)
+    document.write(`last index:${emp[emp.length-1]}`)
+</script>
+
+<h1>Access All Array Values in Loop</h1>
+<script>
+    var emp=[1,"jay","jayjitendra313@gmail.com",8801164327,"hyd"]
+    var index=0;
+    while(index<emp.length)
+{
+    document.write(`${index} - ${emp[index]} <br>`)
+    index++;
+}
+</script>

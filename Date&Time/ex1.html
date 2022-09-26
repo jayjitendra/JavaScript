@@ -1,0 +1,30 @@
+<script>
+   // document.write( Date())\
+
+   var d = new Date()
+
+   var Year,Month,Date,day,hour,minutes,seconds,milliseconds,ltime;
+   Year=d.getFullYear()
+   Month=d.getMonth()+1
+   Date=d.getDate()
+   day=d.getDay()
+   h=d.getHours()
+   m=d.getMinutes()
+   s=d.getSeconds()
+   ms=d.getMilliseconds()
+   ltime=d.toLocaleTimeString()
+
+   document.write( `Today Date: ${ Year } <br/>` )
+   document.write( `Month     : ${ Month}<br/>` )
+   document.write( `Date      : ${ Date }<br/>` )
+   document.write( `Day      : ${ day }<br/>` )
+   document.write(`H:M:S:    - ${h}:${m}:${s} <br/>`)
+
+   document.write( `LocalTime      : ${ ltime }<br/>` )
+   
+
+   
+
+
+
+</script> 

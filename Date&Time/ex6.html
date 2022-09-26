@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <script>
+
+            function dateTime(){
+
+            var j=new Date()
+
+        
+        
+            var months=["January","February","March","April","May","June","July","August","September","October","November","December" ]
+
+           document.getElementById('jj').innerText=` ${j.getDate()} - ${ months[j.getMonth()+1].slice(0,3) } - ${j.getFullYear()} - [ ${j.getHours()} : ${j.getMinutes()} : ${j.getSeconds()} ] `
+
+            }
+
+            
+            setInterval('dateTime()',1000)
+
+
+
+        </script>
+    </head>
+
+    <body>
+        <h1>DATE and TIME in JAVASCRIPT</h1>
+        <time id="jj"></time>
+
+    </body>
+</html>

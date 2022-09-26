@@ -1,0 +1,17 @@
+<html>
+ <body>
+
+    <button onclick="myfunction()">Try It</button>
+
+     <p id="demo"></p>
+     
+    <script>
+        var fruits = ["Orange","Mango","Apple","Banana"];
+        document.getElementById("demo").innerHTML = fruits;
+
+        function myfunction()
+        {
+            fruits.pop();
+            document.getElementById("demo").innerHTML=fruits;
+        }
+    </script>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+
+
+        var dateTime=function()
+        {
+
+        var now = new Date()
+        var months=["January","February","March","April","May","June","July","August","September","October","November","December" ]
+        
+
+        document.getElementById('jk').innerText=`${now.getDate()}-${ months[now.getMonth()+1].slice(0,3) }-${now.getFullYear()}  [${now.getHours()}:${now.getMinutes()}:${now.getSeconds()}]`
+
+        }
+
+        
+       
+       window.setInterval('dateTime()',1000)
+
+
+
+
+
+    </script>
+</head>
+<body>
+    <h2>Date and Time</h2>
+   <time id="jk"></time>
+</html>
